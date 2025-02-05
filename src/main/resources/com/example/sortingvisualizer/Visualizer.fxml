@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sortingvisualizer.Controller">
+    <children>
+        <HBox fx:id="barContainer" layoutX="36.0" layoutY="28.0" prefHeight="520.0" prefWidth="1010.0" />
+        <Button layoutX="492.0" layoutY="562.0" mnemonicParsing="false" text="Generate Array" onAction="#GenArray"/>
+        <Button layoutX="650.0" layoutY="562.0" mnemonicParsing="false" text="Resume" onAction="#resume"/>
+        <Button layoutX="374.0" layoutY="562.0" mnemonicParsing="false" text="Pause" onAction="#pause"/>
+        <Slider fx:id="slider" layoutX="794.0" layoutY="568.0" majorTickUnit="20.0" min="10.0" showTickLabels="true" snapToTicks="true" value="50"/>
+        <MenuButton fx:id="menu" layoutX="182.0" layoutY="563.0" mnemonicParsing="false" text="Algorithm">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Bubble Sort" onAction="#updateArray"/>
+                <MenuItem mnemonicParsing="false" text="Insertion Sort" onAction="#updateArray"/>
+                <MenuItem mnemonicParsing="false" text="Quick Sort" onAction="#updateArray"/>
+                <MenuItem mnemonicParsing="false" text="Heap Sort" onAction="#updateArray"/>
+            </items>
+        </MenuButton>
+    </children>
+</Pane>
