@@ -41,7 +41,7 @@ A **JavaFX-based application** that visualizes various sorting algorithms in act
 ### Steps to Run
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/ShaunRodriguess/sorting-visualizer.git
+   git clone https://github.com/ShaunRod68/sorting-visualizer.git
    cd sorting-visualizer
 2.Run the Program:
 Open the project in your IDE and run the VisualizerMain.java file.
